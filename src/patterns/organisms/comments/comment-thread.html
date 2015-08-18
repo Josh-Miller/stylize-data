@@ -1,0 +1,12 @@
+<section class="comments section">
+	<div class="comments-container" id="comments-container">
+		<h2 class="section-title">59 Comments</h2>
+		{{> comment-form }}
+		<ul class="comment-list">
+			{{# listItems.five }}
+				{{> single-comment }}
+			{{/ listItems.five }}
+		</ul>
+	</div>
+	{{> pagination }}
+</section>
